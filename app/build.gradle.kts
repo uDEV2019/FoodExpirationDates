@@ -1,15 +1,14 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import java.io.FileInputStream
 import java.io.FileNotFoundException
 import java.util.Properties
 
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.com.android.application)
-    alias(libs.plugins.org.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.com.google.dagger.hilt.android)
     alias(libs.plugins.app.cash.paparazzi)
     alias(libs.plugins.com.google.devtools.ksp)
+    alias(libs.plugins.compose)
 }
 
 val buildFossProperty = "buildFoss"
@@ -33,10 +32,10 @@ android {
         applicationId = "com.lorenzovainigli.foodexpirationdates"
         minSdk = 24
         targetSdk = 34
-        versionCode = 25
-        versionName = "2.1.0"
+        versionCode = 27
+        versionName = "2.3.0"
 
-        archivesName.set("FoodExpirationDates-$versionName")
+        base.archivesName.set("FoodExpirationDates-$versionName")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -104,9 +103,6 @@ android {
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
@@ -221,4 +217,10 @@ tasks.register<Copy>("copyAPKs") {
         includeEmptyDirs = false
     }
     into(layout.projectDirectory.dir("apk/${android.defaultConfig.versionCode}_${android.defaultConfig.versionName}"))
+}
+
+tasks.all {
+    if (name == "uploadCrashlyticsMappingFileFullRelease") {
+        dependsOn("processFullDebugGoogleServices")
+    }
 }

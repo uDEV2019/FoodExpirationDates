@@ -1,8 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    alias(libs.plugins.org.jetbrains.kotlin.jvm)
+    alias(libs.plugins.kotlin.jvm)
 }
 
 java {
@@ -34,6 +33,10 @@ val locales = mapOf(
     "in" to "Indonesian",
     "it" to "Italian",
     "ja" to "Japanese",
+    "ru" to "Russian",
+    "tr" to "Turkish",
+    "pl" to "Polish",
+    "vi" to "Vietnamese"
 )
 
 var results: List<Pair<String, Int>> = mutableListOf()
