@@ -7,6 +7,8 @@
     <string name="tomorrow">Tomorrow</string>
     <string name="in_n_days">In %1$d days</string>
     <string name="add_item">Add item</string>
+    <string name="enable_screen_protection">Enable screen protection</string>
+    <string name="protect_your_screen">Protect your screen from screenshots and screen recording.</string>
     <string name="edit_item">Edit item</string>
     <string name="food_name">Food name</string>
     <string name="expiration_date">Expiration date</string>
@@ -23,6 +25,7 @@
     <string name="feature_list">
         - Display a list with food expiration dates in ascending time order\n
         - Add, edit and delete items\n
+        - Product retrieval using barcode scanner and Open Food Facts API\n
         - Opening date\n
         - Notifications
     </string>
@@ -63,8 +66,9 @@
     <string name="bold">Bold</string>
     <string name="extra_bold">Extra Bold</string>
     <string name="top_bar_font_style">Top bar font style</string>
-    <string name="behaviour">Behaviour</string>
+    <string name="behaviour">Behavior</string>
     <string name="appearance">Appearance</string>
+    <string name="privacy">Privacy</string>
     <string name="send_an_email">Send an email</string>
     <string name="contacts">Contacts</string>
     <string name="contacts_text">If you would like to get more information about this application, send a feedback, report a bug, request a feature, or simply contact the developer, please send an email using the following button.\nIf you have bug reports and feature requests, you can also open an issue on the GitHub repository for this application.</string>
@@ -79,6 +83,14 @@
     <string name="export_data">Export data</string>
     <string name="import_data">Import data</string>
     <string name="data_exported">Data exported</string>
+    <string name="connection_error">Connection error</string>
+    <string name="getting_product_info">Getting product info…</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="please_scan_a_barcode">Please scan a barcode</string>
+    <string name="product_not_found">Product not found</string>
+    <string name="retry">Retry</string>
+    <string name="scanning_error">Scanning error</string>
+    <string name="opened">Opened</string>
 
     <string-array name="example_foods">
         <item>Eggs</item>
@@ -97,6 +109,8 @@
         <item>Dark theme</item>
         <item>Dynamic colors</item>
     </string-array>
+    <string name="screenshot_titles_barcode_scanner">Barcode scanner</string>
+    <string name="screenshot_titles_made_with_heart">Made with ❤️</string>
     <string-array name="time_span">
         <item>Days</item>
         <item>Months</item>

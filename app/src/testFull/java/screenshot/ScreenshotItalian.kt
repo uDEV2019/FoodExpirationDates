@@ -12,7 +12,8 @@ class ScreenshotItalian : Screenshot() {
         deviceConfig = PIXEL_5.copy(
             locale = "it"
         ),
-        theme = "android:Theme.Material.Light.NoActionBar"
+        theme = "android:Theme.Material.Light.NoActionBar",
+        useDeviceResolution = true
     )
 
     @Test
@@ -43,6 +44,16 @@ class ScreenshotItalian : Screenshot() {
     @Test
     fun screen6DynamicColors(){
         super.screen6DynamicColors(paparazzi)
+    }
+
+    @Test
+    fun screen7BarcodeScanner(){
+        super.screen7BarcodeScanner(paparazzi)
+    }
+
+    @Test
+    fun screen8MadeWithHeart(){
+        super.screen8MadeWithHeart(paparazzi)
     }
 
 }

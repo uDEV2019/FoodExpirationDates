@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Fecha de Caducidad de los Alimentos</string>
-    <string name="app_name_short">Caducidad de los Alimentos</string>
+    <string name="app_name_short">Caducidad de los alimentos</string>
     <string name="n_days_ago">Hace %1$d días</string>
     <string name="yesterday">Ayer</string>
     <string name="today">Hoy</string>
@@ -19,47 +19,44 @@
     <string name="share">Compartir</string>
     <string name="leave_a_star_on_github">Valóranos en GitHub</string>
     <string name="write_a_review">Déjanos tu opinión</string>
-    <string name="source_code">Código Fuente</string>
+    <string name="source_code">Código fuente</string>
     <string name="features">Características</string>
-    <string name="feature_list">
-        - Muestra una lista con las fechas de caducidad de los alimentos, ordenadas cronológicamente de forma ascendente\n
-        - Añade, edita y elimina artículos\n
-        - Fecha de apertura\n
-        - Notificaciones
-    </string>
+    <string name="feature_list">- Mostrar una lista con las fechas de caducidad de los alimentos en orden ascendente de tiempo
+\n - Agregar, editar y eliminar elementos
+\n - Recuperación de productos mediante escáner de código de barras y API Open Food Facts
+\n - Fecha de apertura
+\n - Notificaciones</string>
     <string name="support_this_project">Apoya este proyecto</string>
     <string name="report_a_bug">Reportar un error</string>
     <string name="version_x">Versión %1$s</string>
     <string name="app_description">%1$s es un proyecto de código abierto desarrollado por Lorenzo Vainigli y otros contribuyentes.\nEl código de esta aplicación es publicado bajo las licencias MIT, disponible en GitHub.</string>
     <string name="about_this_app">Sobre esta aplicación</string>
     <string name="privacy_policy">Política de privacidad</string>
-    <string name="contributors_list_title">Contribuidores</string>
-    <string name="contributors_list_subtitle">Estas son las personas que han contribuido al desarrollo de esta aplicación.</string>
+    <string name="contributors_list_title">Colaboradores</string>
+    <string name="contributors_list_subtitle">Estas son las personas que han colaborado en el desarrollo de esta aplicación.</string>
     <string name="back">Atrás</string>
     <string name="no_items_found">No se encontraron artículos</string>
     <string name="please_insert_one">Por favor, agregue uno</string>
     <string name="your_food_is_expiring">¡Tu comida está caducando!</string>
     <string name="menu">Menú</string>
     <string name="settings">Configuración</string>
-    <string name="date_format">Formato de Fecha</string>
+    <string name="date_format">Formato de la fecha</string>
     <string name="date_format_desc">El formato de la fecha que desea ver en los alimentos.</string>
     <string name="choose_the_date_format">Selecciona el formato de Fecha</string>
     <string name="locale_formats">Formatos locales</string>
     <string name="other_formats">Otros formatos</string>
     <string name="notification_time">Hora de notificación</string>
-    <string name="notification_time_desc">
-        Cada día recibirás una notificación con la lista de tus alimentos:\n
-        - ya caducados\n
-        - que caducan en el día en curso\n
-        - a los que les queda un día para caducar.\n
-    </string>
+    <string name="notification_time_desc">Cada día recibirás una notificación con una lista de tus artículos:
+\n - que ya han caducado
+\n - que caducan en la fecha actual
+\n - a los que les queda un día para la fecha de caducidad.</string>
     <string name="dynamic_colors">Colores dinámicos</string>
     <string name="theme">Tema</string>
     <string name="light">Claro</string>
     <string name="system">Sistema</string>
     <string name="dark">Oscuro</string>
     <string name="x_deleted">%1$s eliminado</string>
-    <string name="undo">Cancelar</string>
+    <string name="undo">Deshacer</string>
     <string name="normal">Normal</string>
     <string name="bold">Negrita</string>
     <string name="extra_bold">Negrita extra</string>
@@ -67,7 +64,7 @@
     <string name="behaviour">Comportamiento</string>
     <string name="appearance">Apariencia</string>
     <string name="send_an_email">Enviar un e-mail</string>
-    <string name="contacts">Contacto</string>
+    <string name="contacts">Contactos</string>
     <string name="contacts_text">Si desea obtener más información sobre esta aplicación, enviar comentarios, informar de un error, solicitar una función o simplemente ponerse en contacto con el desarrollador, envíe un correo electrónico utilizando el siguiente botón.\nEn caso de informes de errores y solicitudes de funciones, puede abrir una incidencia en el repositorio de GitHub de esta aplicación.</string>
     <string name="list">Lista</string>
     <string name="opening_date">Fecha de apertura</string>
@@ -80,7 +77,6 @@
     <string name="export_data">Exportar datos</string>
     <string name="import_data">Importar datos</string>
     <string name="data_exported">Datos exportados</string>
-
     <string-array name="example_foods">
         <item>Huevos</item>
         <item>Queso</item>
@@ -102,4 +98,17 @@
         <item>Días</item>
         <item>Meses</item>
     </string-array>
+    <string name="connection_error">Fallo en la conexión</string>
+    <string name="no_internet_connection">Sin conexión a Internet</string>
+    <string name="please_scan_a_barcode">Por favor escanee un código de barras</string>
+    <string name="product_not_found">Producto no encontrado</string>
+    <string name="retry">Reintentar</string>
+    <string name="scanning_error">Error al escanear</string>
+    <string name="getting_product_info">Obteniendo información del producto…</string>
+    <string name="screenshot_titles_barcode_scanner">Escáner de código de barras</string>
+    <string name="screenshot_titles_made_with_heart">Hecho con ❤️</string>
+    <string name="opened">Abierto</string>
+    <string name="enable_screen_protection">Activar la protección de pantalla</string>
+    <string name="protect_your_screen">Protege tu pantalla de capturas y grabaciones de pantalla.</string>
+    <string name="privacy">Privacidad</string>
 </resources>

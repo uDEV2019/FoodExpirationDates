@@ -32,8 +32,8 @@ android {
         applicationId = "com.lorenzovainigli.foodexpirationdates"
         minSdk = 24
         targetSdk = 34
-        versionCode = 27
-        versionName = "2.3.0"
+        versionCode = 34
+        versionName = "2.5.0"
 
         base.archivesName.set("FoodExpirationDates-$versionName")
 
@@ -151,6 +151,7 @@ dependencies {
     // https://developer.android.com/jetpack/compose/bom/bom-mapping
     implementation(platform(libs.compose.bom))
     implementation(libs.material3)
+    implementation(libs.material.icons.extended)
     implementation(libs.runtime.livedata)
     implementation(libs.ui)
     implementation(libs.ui.tooling.preview)
@@ -188,6 +189,24 @@ dependencies {
     implementation(libs.splashscreen)
 
     implementation(libs.opencsv)
+    api(libs.guava)
+
+    // Camera
+    "fullImplementation"(libs.androidx.camera.core)
+    "fullImplementation"(libs.androidx.camera.camera2)
+    "fullImplementation"(libs.androidx.camera.lifecycle)
+    "fullImplementation"(libs.androidx.camera.view)
+
+    // ML Kit Barcode scanner
+    "fullImplementation"(libs.androidx.camera.mlkit.vision)
+    "fullImplementation"(libs.barcode.scanning)
+
+    // Retrofit
+    "fullImplementation"(libs.retrofit)
+    "fullImplementation"(libs.converter.gson)
+
+    // Coil
+    "fullImplementation"(libs.coil.compose)
 }
 
 if (!buildFoss){

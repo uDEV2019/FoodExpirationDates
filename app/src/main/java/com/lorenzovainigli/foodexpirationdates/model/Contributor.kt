@@ -2,9 +2,20 @@ package com.lorenzovainigli.foodexpirationdates.model
 
 class Contributor(
     val name: String,
-    val username: String
+    val username: String,
+    val platform: Platform = Platform.GITHUB
 ) {
     constructor(username: String) : this(name = username, username = username)
+    constructor(username: String, platform: Platform) : this(
+        name = username,
+        username = username,
+        platform = platform
+    )
+}
+
+enum class Platform(val url: String) {
+    GITHUB("github.com"),
+    WEBLATE("weblate.org")
 }
 
 val contributors = listOf(
@@ -20,8 +31,16 @@ val contributors = listOf(
     Contributor(name = "Aaryan", username = "An-Array"),
     Contributor(name = "Yusril A", username = "rasvanjaya21"),
     Contributor(name = "Максим", username = "gerasimov-mv"),
-    Contributor(name = "ＷＩＮＺＯＲＴ", username = "mikropsoft"),
+    Contributor(name = "WINZORT", username = "mikropsoft"),
     Contributor(username = "3limssmile"),
     Contributor(username = "ngocanhtve"),
-    Contributor(name = "kuragehime", username = "kuragehimekurara1")
+    Contributor(name = "kuragehime", username = "kuragehimekurara1"),
+    Contributor(name = "gallegonovato", username = "gallegonovato", platform = Platform.WEBLATE),
+    Contributor(name = "Eryk Michalak", username = "gnu-ewm", platform = Platform.WEBLATE),
+    Contributor(name = "Oğuz Ersen", username = "oersen"),
+    Contributor(username = "hugoalh", platform = Platform.WEBLATE),
+    Contributor(name = "Ettore Atalan", username = "Atalanttore"),
+    Contributor(name = "Maha Rajan", username = "Maha-Rajan"),
+    Contributor(name = "Anurag Kanojiya", username = "anuragkanojiya1"),
+    Contributor(name = "Prakash Irom", username = "PrakashIrom"),
 )

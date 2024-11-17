@@ -24,6 +24,7 @@
     <string name="feature_list">
         - Visualizza un elenco con le date di scadenza degli alimenti in ordine crescente di tempo\n
         - Aggiungi, modifica ed elimina elementi\n
+        - Recupero di prodotti tramite scansione di codici a barre e API di Open Food Facts\n
         - Data di apertura\n
         - Notifiche
     </string>
@@ -80,6 +81,17 @@
     <string name="export_data">Esporta dati</string>
     <string name="import_data">Importa dati</string>
     <string name="data_exported">Dati esportati</string>
+    <string name="connection_error">Errore di connessione</string>
+    <string name="getting_product_info">Recupero info prodotto…</string>
+    <string name="no_internet_connection">Nessuna connessione ad internet</string>
+    <string name="please_scan_a_barcode">Scansiona un codice a barre</string>
+    <string name="product_not_found">Prodotto non trovato</string>
+    <string name="retry">Riprova</string>
+    <string name="scanning_error">Errore di scansione</string>
+    <string name="opened">Aperto</string>
+    <string name="enable_screen_protection">Attiva protezione schermo</string>
+    <string name="protect_your_screen">Proteggi la tua schermata dagli screenshot e dalla registrazione dello schermo.</string>
+    <string name="privacy">Privacy</string>
 
     <string-array name="example_foods">
         <item>Uova</item>
@@ -98,6 +110,7 @@
         <item>Tema scuro</item>
         <item>Colori dinamici</item>
     </string-array>
+    <string name="screenshot_titles_barcode_scanner">Scanner di codici a barre</string>
     <string-array name="time_span">
         <item>Giorni</item>
         <item>Mesi</item>

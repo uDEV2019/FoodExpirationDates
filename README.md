@@ -7,12 +7,12 @@
 [![Author](https://img.shields.io/badge/Author-lorenzovngl-white?style=flat-square)](https://github.com/lorenzovngl)
 ![GitHub Repo stars](https://img.shields.io/github/stars/lorenzovngl/FoodExpirationDates?style=flat-square&label=%E2%AD%90&&color=white)
 
-[![Discord](https://img.shields.io/discord/1208027149299224606?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/vV98jT2umw)
+[![](https://img.shields.io/badge/Featured%20on-Open%20Sustainable%20Technology-009485?style=flat-square)](https://github.com/protontypes/open-sustainable-technology)
 
 ![GitHub Workflow (Android CI)](https://img.shields.io/github/actions/workflow/status/lorenzovngl/FoodExpirationDates/.github%2Fworkflows%2Fandroid.yml?style=flat-square&label=Build)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lorenzovngl/FoodExpirationDates?label=Last%20commit&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/lorenzovngl/FoodExpirationDates?style=flat-square&label=License)
-![Languages](https://img.shields.io/badge/Languages-13-orange?style=flat-square)
+![Languages](https://img.shields.io/badge/Languages-15-orange?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lorenzovngl/FoodExpirationDates?style=flat-square&label=Size)
 ![Pull requests welcome](https://img.shields.io/badge/Pull%20requests-Welcome-ff69b4?style=flat-square)
 <a href="https://gitmoji.dev">
@@ -47,6 +47,7 @@ This simple app helps you avoid forgetting to consume foods that are about to ex
 
 - Display a list of food with their expiration dates in ascending order of time
 - Add, edit and delete items
+- Product retrieval using barcode scanner and [Open Food Facts](https://world.openfoodfacts.org/) API
 - Opening date
 - Notifications
 
@@ -54,33 +55,27 @@ This simple app helps you avoid forgetting to consume foods that are about to ex
 
 <div align="center">
 
-| | | |
-|-|-|-|
-| <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen1MainActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen2InsertActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen3SettingsActivity.png"> | 
-| <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen4InfoActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen5DarkMode.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen6DynamicColors.png"> |
+| | | | |
+|-|-|-|-|
+| <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen1MainActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen2InsertActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screenBarcodeScanner.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen3SettingsActivity.png"> | 
+
+| | | | |
+|-|-|-|-|
+| <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen4InfoActivity.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen5DarkMode.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screen6DynamicColors.png"> | <img width="150px" src="screenshots/screenshot_ScreenshotEnglish_screenMadeWithHeart.png"> |
+
 </div>
 
 ## 🌐 Languages
 
 <div align="center">
 
-![English default](https://img.shields.io/badge/English-default-blue?style=flat-square)
-![Arabic](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Far.json)
-![French](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Ffr.json)
-![German](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fde.json)
-![Hindi](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fhi.json)
-![Indonesian](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fin.json)
-![Italian](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fit.json)
-![Japanese](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fja.json)
-![Polish](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fpl.json)
-![Russian](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fru.json)
-![Spanish](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fes.json)
-![Turkish](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Ftr.json)
-![Vietnamese](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Florenzovngl%2FFoodExpirationDates%2Fmain%2Fshields%2Ftranslations%2Fvi.json)
+[![Translation status](https://hosted.weblate.org/widget/food-expiration-dates/287x66-black.png)](https://hosted.weblate.org/engage/food-expiration-dates/)
+
+[![Translation status](https://hosted.weblate.org/widget/food-expiration-dates/horizontal-auto.svg)](https://hosted.weblate.org/engage/food-expiration-dates/)
 
 </div>
 
-> New translations are welcome. If you want to add a new language to the app, or improve or review an existing one, please [open an issue](https://github.com/lorenzovngl/FoodExpirationDates/issues/new).
+> You can help translating this project on [Hosted Weblate](https://hosted.weblate.org/engage/food-expiration-dates/).
 
 ## 🏗️ Installation steps
 
@@ -123,6 +118,14 @@ This simple app helps you avoid forgetting to consume foods that are about to ex
 <a href="https://github.com/3limssmile"><img src="https://avatars.githubusercontent.com/3limssmile" alt="@3limssmile" height="32" width="32"></a>
 <a href="https://github.com/ngocanhtve"><img src="https://avatars.githubusercontent.com/ngocanhtve" alt="@ngocanhtve" height="32" width="32"></a>
 <a href="https://github.com/kuragehimekurara1"><img src="https://avatars.githubusercontent.com/kuragehimekurara1" alt="@kuragehimekurara1" height="32" width="32"></a>
+<a href="https://hosted.weblate.org/user/gallegonovato/"><img src="https://hosted.weblate.org/avatar/128/gallegonovato.png" alt="@gallegonovato" height="32" width="32"></a>
+<a href="https://hosted.weblate.org/user/gnu-ewm/"><img src="https://hosted.weblate.org/avatar/128/gnu-ewm.png" alt="@gnu-ewm" height="32" width="32"></a>
+<a href="https://github.com/oersen"><img src="https://avatars.githubusercontent.com/oersen" alt="@oersen" height="32" width="32"></a>
+<a href="https://hosted.weblate.org/user/hugoalh/"><img src="https://hosted.weblate.org/avatar/128/hugoalh.png" alt="@hugoalh" height="32" width="32"></a>
+<a href="https://github.com/Atalanttore"><img src="https://avatars.githubusercontent.com/Atalanttore" alt="@Atalanttore" height="32" width="32"></a>
+<a href="https://github.com/Maha-Rajan"><img src="https://avatars.githubusercontent.com/Maha-Rajan" alt="@Maha-Rajan" height="32" width="32"></a>
+<a href="https://github.com/anuragkanojiya1"><img src="https://avatars.githubusercontent.com/anuragkanojiya1" alt="@anuragkanojiya1" height="32" width="32"></a>
+<a href="https://github.com/PrakashIrom"><img src="https://avatars.githubusercontent.com/PrakashIrom" alt="@PrakashIrom" height="32" width="32"></a>
 
 ## ❤️ Support
 
@@ -143,6 +146,6 @@ This simple app helps you avoid forgetting to consume foods that are about to ex
 
 *Lorenzo*
 
-## Star History
+## ✨ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lorenzovngl/FoodExpirationDates&type=Date)](https://star-history.com/#lorenzovngl/FoodExpirationDates&Date)
