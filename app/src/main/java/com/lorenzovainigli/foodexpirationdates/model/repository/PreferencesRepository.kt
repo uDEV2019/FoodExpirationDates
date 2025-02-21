@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.Window
 import android.view.WindowManager
 import com.lorenzovainigli.foodexpirationdates.R
+import com.lorenzovainigli.foodexpirationdates.model.Language
 import java.lang.Exception
 import java.text.DateFormat
 import java.text.SimpleDateFormat
@@ -21,6 +22,8 @@ class PreferencesRepository {
         const val keyThemeMode = "theme_mode"
         const val keyTopBarFont = "top_bar_font"
         const val keyDynamicColors = "dynamic_colors"
+        const val keyMonochromeIcons = "monochrome_icons"
+        const val keyLanguage = "language"
         private val availLocaleDateFormats = arrayOf(DateFormat.SHORT, DateFormat.MEDIUM)
         private val availOtherDateFormats =
             arrayOf(
@@ -174,8 +177,8 @@ class PreferencesRepository {
             sharedPrefs: String = sharedPrefsName,
         ): Boolean {
             try {
-            return context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
-                .getBoolean(keyDynamicColors, false)
+                return context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
+                    .getBoolean(keyDynamicColors, false)
             } catch (e: Exception){
                 e.printStackTrace()
             }
@@ -186,9 +189,64 @@ class PreferencesRepository {
             context: Context,
             sharedPrefs: String = sharedPrefsName,
             dynamicColorsEnabled: Boolean
+        ): Boolean {
+            try {
+                context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
+                    .edit().putBoolean(keyDynamicColors, dynamicColorsEnabled).apply()
+                return true
+            } catch (_: Exception){
+                return false
+            }
+        }
+
+        fun getMonochromeIcons(
+            context: Context,
+            sharedPrefs: String = sharedPrefsName,
+        ): Boolean {
+            try {
+                return context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
+                    .getBoolean(keyMonochromeIcons, true)
+            } catch (e: Exception){
+                e.printStackTrace()
+            }
+            return true
+        }
+
+        fun setMonochromeIcons(
+            context: Context,
+            sharedPrefs: String = sharedPrefsName,
+            monochromeIconsEnabled: Boolean
+        ): Boolean {
+            try {
+                context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
+                    .edit().putBoolean(keyMonochromeIcons, monochromeIconsEnabled).apply()
+                return true
+            } catch (_: Exception){
+                return false
+            }
+        }
+
+        fun getLanguage(
+            context: Context,
+            sharedPrefs: String = sharedPrefsName,
+        ): String {
+            try {
+                return context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
+                    .getString(keyLanguage, Language.SYSTEM.code)
+                    ?: Language.SYSTEM.code
+            } catch (e: Exception){
+                e.printStackTrace()
+            }
+            return Language.SYSTEM.code
+        }
+
+        fun setLanguage(
+            context: Context,
+            sharedPrefs: String = sharedPrefsName,
+            language: String
         ) {
             return context.getSharedPreferences(sharedPrefs, Context.MODE_PRIVATE)
-                .edit().putBoolean(keyDynamicColors, dynamicColorsEnabled).apply()
+                .edit().putString(keyLanguage, language).apply()
         }
     }
 }

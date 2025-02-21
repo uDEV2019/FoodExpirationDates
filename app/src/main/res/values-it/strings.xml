@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Scadenze alimenti</string>
+    <string name="app_name">Scadenze Alimenti</string>
     <string name="app_name_short">@string/app_name</string>
     <string name="n_days_ago">%1$d giorni fa</string>
     <string name="yesterday">Ieri</string>
@@ -92,7 +92,6 @@
     <string name="enable_screen_protection">Attiva protezione schermo</string>
     <string name="protect_your_screen">Proteggi la tua schermata dagli screenshot e dalla registrazione dello schermo.</string>
     <string name="privacy">Privacy</string>
-
     <string-array name="example_foods">
         <item>Uova</item>
         <item>Formaggio</item>
@@ -111,8 +110,14 @@
         <item>Colori dinamici</item>
     </string-array>
     <string name="screenshot_titles_barcode_scanner">Scanner di codici a barre</string>
+    <string name="screenshot_titles_made_with_heart">Made with ❤️</string>
+    <string name="apply">Applica</string>
+    <string name="select_language">Seleziona lingua</string>
+    <string name="debug_options">Opzioni di debug</string>
+    <string name="language">Lingua</string>
     <string-array name="time_span">
         <item>Giorni</item>
         <item>Mesi</item>
     </string-array>
+    <string name="monochrome_icons">Icone monocromatiche</string>
 </resources>

@@ -6,6 +6,7 @@
 
 [![Author](https://img.shields.io/badge/Author-lorenzovngl-white?style=flat-square)](https://github.com/lorenzovngl)
 ![GitHub Repo stars](https://img.shields.io/github/stars/lorenzovngl/FoodExpirationDates?style=flat-square&label=%E2%AD%90&&color=white)
+[![Discord](https://img.shields.io/discord/1208027149299224606?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/UVpzQqzg5c)
 
 [![](https://img.shields.io/badge/Featured%20on-Open%20Sustainable%20Technology-009485?style=flat-square)](https://github.com/protontypes/open-sustainable-technology)
 
@@ -126,6 +127,7 @@ This simple app helps you avoid forgetting to consume foods that are about to ex
 <a href="https://github.com/Maha-Rajan"><img src="https://avatars.githubusercontent.com/Maha-Rajan" alt="@Maha-Rajan" height="32" width="32"></a>
 <a href="https://github.com/anuragkanojiya1"><img src="https://avatars.githubusercontent.com/anuragkanojiya1" alt="@anuragkanojiya1" height="32" width="32"></a>
 <a href="https://github.com/PrakashIrom"><img src="https://avatars.githubusercontent.com/PrakashIrom" alt="@PrakashIrom" height="32" width="32"></a>
+<a href="https://github.com/serAKL16lysA"><img src="https://avatars.githubusercontent.com/serAKL16lysA" alt="@serAKL16lysA" height="32" width="32"></a>
 
 ## ❤️ Support
 

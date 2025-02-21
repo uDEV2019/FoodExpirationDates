@@ -1,5 +1,6 @@
 package com.lorenzovainigli.foodexpirationdates.view
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,9 +18,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.core.view.WindowCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
+import com.lorenzovainigli.foodexpirationdates.BuildConfig
+import com.lorenzovainigli.foodexpirationdates.model.LocaleHelper
 import com.lorenzovainigli.foodexpirationdates.model.NotificationManager
 import com.lorenzovainigli.foodexpirationdates.model.repository.PreferencesRepository
 import com.lorenzovainigli.foodexpirationdates.model.repository.PreferencesRepository.Companion.checkAndSetSecureFlags
@@ -37,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
+        enableEdgeToEdge()
 
         val splashScreen = installSplashScreen()
         splashScreen.setKeepOnScreenCondition { viewModel.isSplashScreenLoading.value }
@@ -68,6 +70,8 @@ class MainActivity : ComponentActivity() {
                 darkScrim = android.graphics.Color.TRANSPARENT,
                 detectDarkMode = { _ -> isInDarkTheme }
             )
+            val searchQuery = remember { mutableStateOf("") }
+
             enableEdgeToEdge(
                 statusBarStyle = systemBarStyle,
                 navigationBarStyle = systemBarStyle
@@ -88,16 +92,27 @@ class MainActivity : ComponentActivity() {
                     MyScaffold(
                         activity = this,
                         navController = navController,
-                        showSnackbar = showSnackbar
+                        showSnackbar = showSnackbar,
+                        searchQuery = searchQuery
                     ) {
                         Navigation(
                             activity = this,
                             navController = navController,
-                            showSnackbar = showSnackbar
+                            showSnackbar = showSnackbar,
+                            searchQuery = searchQuery
                         )
                     }
                 }
             }
+        }
+    }
+
+    override fun attachBaseContext(newBase: Context) {
+        if (BuildConfig.DEBUG) {
+            val locale = PreferencesRepository.getLanguage(newBase)
+            super.attachBaseContext(LocaleHelper.setLocale(newBase, locale))
+        } else {
+            super.attachBaseContext(newBase)
         }
     }
 

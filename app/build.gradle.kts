@@ -26,14 +26,14 @@ try {
 
 android {
     namespace = "com.lorenzovainigli.foodexpirationdates"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.lorenzovainigli.foodexpirationdates"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 34
-        versionName = "2.5.0"
+        targetSdk = 35
+        versionCode = 35
+        versionName = "2.5.1"
 
         base.archivesName.set("FoodExpirationDates-$versionName")
 
@@ -138,6 +138,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     testImplementation(libs.junit.jupiter)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.mockk)
     androidTestImplementation(libs.test.core.ktx)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
